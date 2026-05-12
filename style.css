@@ -854,6 +854,21 @@ picture {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
+.youtube-wrapper iframe {
+    width: min(100%, 760px);
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 6px;
+    background: #111;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.video-caption a {
+    color: #5a0f0f;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 .video-caption {
     font-size: 13px;
     color: #5a0f0f;
