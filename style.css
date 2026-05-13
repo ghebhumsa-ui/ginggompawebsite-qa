@@ -823,6 +823,23 @@ picture {
     object-fit: contain;
 }
 
+.visit-contact-panel {
+    margin-top: 34px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.42);
+    border: 1px solid rgba(90, 15, 15, 0.14);
+    border-left: 3px solid #7a1c1c;
+}
+
+.visit-contact-panel h3 {
+    margin-top: 0;
+    color: #5a0f0f;
+}
+
+.visit-contact-panel .contact-list {
+    margin-top: 14px;
+}
+
 /* LHATSUN SECTION IMAGE REFINEMENT */
 #lhatsun .section-image {
     max-width: 700px;
