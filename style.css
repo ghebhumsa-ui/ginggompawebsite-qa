@@ -1008,10 +1008,10 @@ picture {
 /* MODERN QA HOMEPAGE */
 .home-hero {
     min-height: 88vh;
-    align-items: flex-end !important;
-    justify-content: flex-start !important;
-    text-align: left !important;
-    padding: 0 7vw 9vh;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 8vh 7vw;
 }
 
 .home-hero::before {
@@ -1025,6 +1025,9 @@ picture {
     padding: 0 !important;
     background: transparent !important;
     backdrop-filter: none !important;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-eyebrow {
@@ -1040,6 +1043,7 @@ picture {
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 12px;
     margin-top: 28px;
 }
@@ -1251,7 +1255,7 @@ picture {
 
     .home-hero {
         min-height: 78vh;
-        padding: 0 22px 54px;
+        padding: 54px 22px;
     }
 
     .hero-actions {
