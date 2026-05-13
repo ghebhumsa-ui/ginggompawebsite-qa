@@ -49,9 +49,28 @@ function toggleMenu() {
     menu.classList.toggle("open", !isOpen);
 }
 
+function setActiveMenuItem() {
+    const currentPath = window.location.pathname.split("/").pop() || "index.html";
+    const links = document.querySelectorAll("#site-navigation a");
+
+    links.forEach(function(link) {
+        const linkPath = link.getAttribute("href");
+        const isActive = linkPath === currentPath;
+        link.classList.toggle("active", isActive);
+
+        if (isActive) {
+            link.setAttribute("aria-current", "page");
+        } else {
+            link.removeAttribute("aria-current");
+        }
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const button = document.querySelector(".menu-toggle");
     const menu = document.getElementById("site-navigation");
+
+    setActiveMenuItem();
 
     if (!button || !menu) {
         return;
