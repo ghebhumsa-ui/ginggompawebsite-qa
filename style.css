@@ -1446,6 +1446,118 @@ picture {
         font-size: 19px;
     }
 }
+
+@media (max-width: 920px) and (orientation: landscape) {
+    header {
+        position: relative;
+        padding: 8px 12px;
+    }
+
+    .nav-container {
+        flex-wrap: nowrap;
+        min-height: 38px;
+        gap: 8px;
+    }
+
+    header h2 {
+        flex: 0 0 auto;
+        font-size: 15px;
+    }
+
+    .language-switcher {
+        order: 0;
+        flex: 1 1 auto;
+        width: auto;
+        max-width: none;
+        justify-content: flex-end;
+        margin-left: auto;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scrollbar-width: none;
+    }
+
+    .language-switcher::-webkit-scrollbar {
+        display: none;
+    }
+
+    .language-switcher button {
+        flex: 0 0 auto;
+        min-width: auto;
+        max-width: none;
+        min-height: 30px;
+        padding: 0 8px;
+        font-size: 10.5px;
+    }
+
+    .menu-toggle {
+        flex: 0 0 auto;
+        min-width: 92px;
+        min-height: 36px;
+        padding: 7px 10px;
+        margin-left: 0;
+    }
+
+    .menu-toggle strong {
+        font-size: 11px;
+    }
+
+    .site-nav {
+        top: calc(100% + 6px);
+        width: calc(100vw - 24px);
+        max-height: calc(100svh - 62px);
+    }
+
+    .site-nav a {
+        min-height: 42px;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .home-hero {
+        height: auto !important;
+        min-height: calc(100svh - 54px);
+        padding: 22px 18px 34px;
+        align-items: flex-start !important;
+        background-position: center top;
+    }
+
+    .home-hero-content {
+        max-width: min(680px, 96vw) !important;
+    }
+
+    .tibetan-title {
+        font-size: clamp(18px, 3.6vw, 24px);
+        margin-bottom: 8px;
+    }
+
+    .hero-eyebrow {
+        margin-bottom: 6px;
+        font-size: 11px !important;
+    }
+
+    #hero h1 {
+        font-size: clamp(28px, 5vw, 38px);
+        margin-bottom: 8px;
+    }
+
+    #hero p {
+        font-size: 14px;
+        line-height: 1.45;
+        margin-bottom: 9px;
+    }
+
+    .hero-actions {
+        margin-top: 14px;
+        gap: 8px;
+    }
+
+    .hero-button {
+        width: auto;
+        min-height: 38px;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
 /* END HOMEPAGE UPCOMING EVENT */
 
 /* CONTACT SPACING */
