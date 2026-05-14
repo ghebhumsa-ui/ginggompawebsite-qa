@@ -179,6 +179,7 @@ nav a.active {
 .language-switcher {
     display: inline-flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 4px;
     margin-left: auto;
     padding: 4px;
@@ -1361,24 +1362,48 @@ picture {
 }
 
 @media (max-width: 768px) {
+    header {
+        padding: 10px 14px;
+    }
+
     .nav-container {
+        flex-wrap: wrap;
         gap: 10px;
+        justify-content: space-between;
     }
 
     .language-switcher {
         order: 3;
         width: 100%;
+        max-width: 100%;
         justify-content: center;
         margin-left: 0;
+        overflow: hidden;
+    }
+
+    .language-switcher button {
+        flex: 1 1 auto;
+        min-width: 62px;
+        max-width: 112px;
+        padding: 0 8px;
+        font-size: 11px;
+        white-space: nowrap;
     }
 
     .menu-toggle {
+        margin-left: auto;
         min-width: 112px;
     }
 
     .site-nav {
+        top: calc(100% + 8px);
         max-height: min(72vh, 560px);
         overflow-y: auto;
+        width: calc(100vw - 28px);
+    }
+
+    .site-nav ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .site-nav a {
